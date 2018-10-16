@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Exercice 3 JQuery - Partie 2</title>
+  <title>Exercice 4 JQuery - Partie 2</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="jquery-3.2.1.js"></script>
   <link rel="stylesheet" href="style.css" />
@@ -10,8 +10,8 @@
 <body>
 
   <div class="exercice">
-    <h1>Exercice 3 JQuery - Partie 2</h1>
-    <p>Afficher ou masquer la div text au clic des liens fournis.</p>
+    <h1>Exercice 4 JQuery - Partie 2</h1>
+    <p>Au clic sur un bouton de couleur, modifier la couleur du texte de la div.</p>
   </div>
 
   <div id="text">
@@ -26,13 +26,13 @@
   </div>
 
 <script>
-   $("#green").click(function(){
+   $("#green").click(function(){ // au click du bouton green, la couleur du text via le css change en vert
        $("#text").css("color","green");
    })
-   $("#red").click(function(){
+   $("#red").click(function(){ // au click du bouton red, la couleur du text via le css change en rouge
        $("#text").css("color","red");
    })
-   $("#blue").click(function(){
+   $("#blue").click(function(){ // au click du bouton blue, la couleur du text via le css change en bleu
        $("#text").css("color","blue");
    })
 
